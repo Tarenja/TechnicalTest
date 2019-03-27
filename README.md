@@ -5,29 +5,29 @@ answers during the interview.
 You can submit your answers in a new doc or repository - just send us a link!
 
 1. Of the following tech, which do you feel comfortable with?
-   - [] React
-   - [] AngularJS
+   - [ ] React
+   - [ ] AngularJS
    - [x] Angular
-   - [] Vue
-   - [] VueX
-   - [] Redux
-   - [] Redux-saga
-   - [] Immutable.JS
-   - [] Flow
+   - [ ] Vue
+   - [ ] VueX
+   - [ ] Redux
+   - [ ] Redux-saga
+   - [ ] Immutable.JS
+   - [ ] Flow
    - [x] TypeScript
-   - [] Jest, Enzyme, Chai or similar
-   - [] Cypress
+   - [ ] Jest, Enzyme, Chai or similar
+   - [ ] Cypress
    - [x] ES6
    - [x] Node.js / Express
-   - [] PHP
-   - [] Socket.IO
-   - [] Docker
-   - [] Webpack
-   - [] Cypress
+   - [ ] PHP
+   - [ ] Socket.IO
+   - [ ] Docker
+   - [ ] Webpack
+   - [ ] Cypress
    - [x] Git
-   - [] CI/CD
-   - [] AWS
-   - [] Arceus
+   - [ ] CI/CD
+   - [ ] AWS
+   - [ ] Arceus
    - [x] CSS / Sass
 
 2. Choose your favorite Front-End framework. What do and don't you like about it?
@@ -79,11 +79,11 @@ but not all, of these changes. Please type out the git command you would use:
 commits you want to update your branch with any updates that might have
 happened on master. But, you'd rather not polute the project history with an extra
 commit. What do you do?
-   - [] $ git pull origin master
-   - [] $ git checkout master; git pull; git checkout feature;
+   - [ ] $ git pull origin master
+   - [ ] $ git checkout master; git pull; git checkout feature;
    git merge master
-   - [] $ git fetch; git rebase origin/master
-   - [] $ git fetch origin/master; git merge
+   - [ ] $ git fetch; git rebase origin/master
+   - [ ] $ git fetch origin/master; git merge
 
 6. What are your favorite ES6 features?
 
