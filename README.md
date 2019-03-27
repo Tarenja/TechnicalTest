@@ -29,47 +29,86 @@
 2. Choose your favorite Front-End framework. What do and don't you like about it?
 Please make a comparison against other frameworks you might know.
 
+    Well, the only Front-End framework I have worked with enough to form an opinion on it is Angular. I have worked a little with Vue but not enough to compare.
+    I like Angular because there is a lot built-in, it comes with a lot of stuff to make building applications faster. The documentation is good, if a bit sparse in places, but it's so widely used that there are a lot of tutorials and informational articles about it. I like using Typescript with it it's very organised and clean.
+    What I don't like so much is that it is so big. It's good that it comes with a lot of stuff, but it comes with too much. It's a bit bloated and makes huge builds that can be a bit unwieldy. Also a bit slow compared to when I've used Vue.
+
 3. Convert the following into ES6
 
-   ```javascript
-   'use strict'​;
-   function​ ​Shape​(id, x, y) {
-   ​this​.id = id;
+    ```javascript
+    'use strict'​;
+    function​ ​Shape​(id, x, y) {
+   ​    this​.id = id;
        ​this​.setLocation(x, y);
-   }
+    }
 
-   Shape.prototype.setLocation = ​function​(x, y) {
+    Shape.prototype.setLocation = ​function​(x, y) {
        ​this​.x = x;
        ​this​.y = y;
-   };
+    };
 
-   Shape.prototype.getLocation = ​function​() {
+    Shape.prototype.getLocation = ​function​() {
        ​return​ {
        x: ​this​.x,
        y: ​this​.y
        };
-   };
+    };
 
-   Shape.prototype.toString = ​function​() {
+    Shape.prototype.toString = ​function​() {
    ​   return​ ​'Shape('​ + ​this​.id + ​')'​;
-   };
+    };
 
-   function​ ​Circle​(id, x, y, radius) {
+    function​ ​Circle​(id, x, y, radius) {
        Shape.call(​this​, id, x, y);
        ​this​.radius = radius;
-   }
+    }
 
-   Circle.prototype = ​Object​.create(Shape.prototype);
+    Circle.prototype = ​Object​.create(Shape.prototype);
 
-   Circle.prototype.constructor = Circle;
+    Circle.prototype.constructor = Circle;
 
-   Circle.prototype.toString = ​function​() {
-       ​return​ ​'Circle > '​ + Shape.prototype.toString.call(​this​);
-   };
-   ```
+    Circle.prototype.toString = ​function​() {
+        ​return​ ​'Circle > '​ + Shape.prototype.toString.call(​this​);
+    };
+    ```
+
+    ```javascript
+    'use strict'​;
+    class Shape {
+        constructor (id, x, y) {
+            this.id = id;
+            this.setLocation(x, y);
+        };
+        setLocation (x, y) {
+            this.x = x;
+            this.y = y;
+        };
+        getLocation () {
+            return {
+                x: this.x,
+                y: this.y
+            }
+        };
+        toString () {
+            return `Shape(${this.id})`
+        };
+    };
+
+    class Circle extends Shape {
+        constructor (id, x, y, radius) {
+           super(id, x, y);
+           this.radius = radius;
+        };
+        toString() {
+            return `Circle > ${super.toString()}`
+        };
+    };
+    ```
 
 4. You've made changes in your current working directory and want to stage some,
 but not all, of these changes. Please type out the git command you would use:
+
+    ```git add [filename.txt]```
 
 5. You've started a new feature branch from master. After creating a few of your own
 commits you want to update your branch with any updates that might have
@@ -78,15 +117,36 @@ commit. What do you do?
    - [ ] $ git pull origin master
    - [ ] $ git checkout master; git pull; git checkout feature;
    git merge master
-   - [ ] $ git fetch; git rebase origin/master
+   - [x] $ git fetch; git rebase origin/master
    - [ ] $ git fetch origin/master; git merge
 
 6. What are your favorite ES6 features?
+    Personally I really like the template literals, just because of how much shorter it makes string concatenation and interpolation.
+    I also like the classes, it's much cleaner and more logical than the functions used before.
+    Promises are also very nice, especially when retrieving data from an api.
 
 7. What is an Arrow function? What are its uses? How it differs from normal
 function?
+    Arrow functions are a more concise way to write function expressions, using the =>
+    They are anonymous functions.
+    With these we don't have to write the function or return keywords.
+    We can avoid parentheses around the parameters if there is only 1 parameter.
+    They also make it easier to use the 'this' keyword as the scope stays inside the function.
 
 8. What are the advantages and disadvantages of SASS?
+    Advantages:
+    - You have to write a lot less syntax
+    - You can use variables and mixins in your code to avoid duplication
+    - You can use mathematical and operational functions (such as 'lighten' and 'darken')
+    - You can use nesting and chain selectors
+    - You can import and join lots of files together, creating a cleaner file structure
+
+    Disadvantages:
+    - You have to compile it
+    - There is more of a learning curve
+    - If you are not careful you can create much bigger compiled CSS than necessary, can get out of control
+    - It can get confusing if you nest things too much
+    - Changes to the HTML can break your styling
 
 9. Coding Assignment
    To promote our product, we have decided to launch a campaign where users can
