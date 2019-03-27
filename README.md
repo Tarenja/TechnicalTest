@@ -1,5 +1,7 @@
 # Junior Front-End Technical Test
 
+## Answers to the questions in the Readme below, for the coding assignment check the index.js and other files
+
 1. Of the following tech, which do you feel comfortable with?
    - [ ] React
    - [ ] AngularJS
@@ -72,6 +74,8 @@ Please make a comparison against other frameworks you might know.
     };
     ```
 
+    ES6 conversion:
+
     ```javascript
     'use strict'​;
     class Shape {
@@ -121,12 +125,14 @@ commit. What do you do?
    - [ ] $ git fetch origin/master; git merge
 
 6. What are your favorite ES6 features?
+
     Personally I really like the template literals, just because of how much shorter it makes string concatenation and interpolation.
     I also like the classes, it's much cleaner and more logical than the functions used before.
     Promises are also very nice, especially when retrieving data from an api.
 
 7. What is an Arrow function? What are its uses? How it differs from normal
 function?
+
     Arrow functions are a more concise way to write function expressions, using the =>
     They are anonymous functions.
     With these we don't have to write the function or return keywords.
@@ -134,6 +140,7 @@ function?
     They also make it easier to use the 'this' keyword as the scope stays inside the function.
 
 8. What are the advantages and disadvantages of SASS?
+
     Advantages:
     - You have to write a lot less syntax
     - You can use variables and mixins in your code to avoid duplication
@@ -149,6 +156,7 @@ function?
     - Changes to the HTML can break your styling
 
 9. Coding Assignment
+
    To promote our product, we have decided to launch a campaign where users can
    win a free year of OneFit membership. During Amsterdam marathon, we have
    runners participating with promotional codes printed on their shirt. One code is the
@@ -171,6 +179,7 @@ function?
 
    ```javascript
     const​ expect = ​require​(​'chai'​).expect;
+
     describe(​"Validator"​, () => {
        it(​"should return true when divisible by eleven"​, () => {
            expect(validatePromotionCode(​613884922​)).to.be.true
