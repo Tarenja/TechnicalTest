@@ -1,8 +1,4 @@
-Thank you for applying to OneFit!
-The following assignment will help us assess your technical skills, focusing on
-Front-End and JavaScript. It should take around one hour. We will discuss your
-answers during the interview.
-You can submit your answers in a new doc or repository - just send us a link!
+# Junior Front-End Technical Test
 
 1. Of the following tech, which do you feel comfortable with?
    - [ ] React
