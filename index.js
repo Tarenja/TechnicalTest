@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 
 app.set('view engine', 'pug');
 
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     res.render('main', {title: "Validate Your OneFit Promotion Code!"});

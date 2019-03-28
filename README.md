@@ -35,6 +35,9 @@ Please make a comparison against other frameworks you might know.
     I like Angular because there is a lot built-in, it comes with a lot of stuff to make building applications faster. The documentation is good, if a bit sparse in places, but it's so widely used that there are a lot of tutorials and informational articles about it. I like using Typescript with it it's very organised and clean.
     What I don't like so much is that it is so big. It's good that it comes with a lot of stuff, but it comes with too much. It's a bit bloated and makes huge builds that can be a bit unwieldy. Also a bit slow compared to when I've used Vue.
 
+    If you meant Bootstrap, Materialize e.g, then I can say the one I have actually used a lot is Zurb Foundation. I haven't used many other ones except for Materialize, which I also liked, but has a lot less features than Foundation. I like foundation because it can do a lot. There are a lot of components and extras included, the documentation is very good, there's tons of resources about it.
+    The thing I don't like is that it can sometimes be very frustrating when you're trying to override styling from foundation that is applied by default, it takes a lot of specificity to override it. I also don't like that it's quite verbose, and very specific.
+
 3. Convert the following into ES6
 
     ```javascript
