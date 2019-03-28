@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		title= title
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+	body.container
+		h2.center-align.card-panel.black.white-text= title
+		div.input-field
+			form(action="/", method="post")
+				fieldset.center-align
+					label(for="promo")= "Enter Your Promo Code"
+					input(type="number", name="promo", required)
+					input.btn.waves-effect.waves-light.btn-large(type="submit", value="Validate")
+					if data && !invalid
+						h3.indigo.accent-4.card-panel Code: #{data} is valid! You have won the 1 year free membership!
+					if data && invalid
+						h3.red.lighten-1.card-panel You didn't win... sorry.
