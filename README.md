@@ -1,6 +1,6 @@
 # Junior Front-End Technical Test
 
-## Answers to the questions in the Readme below, for the coding assignment check the index.js and other files
+## Answers to the questions in the Readme below, for the coding assignment check the test folder, index.js and other files
 
 1. Of the following tech, which do you feel comfortable with?
    - [ ] React

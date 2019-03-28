@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		title= title
+	body
+		h1= title
+		form(action="/", method="post")
+			label(for="promo") Promo Code
+			input(type="number", name="promo")
+			input(type="submit", value="Validate")
+		if data
+			p Code: #{data} is valid!
